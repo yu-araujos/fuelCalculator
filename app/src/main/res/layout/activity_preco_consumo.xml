@@ -5,23 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrecoConsumoActivity">
+    tools:context=".ConsumoPorLitroActivity">
 
     <EditText
-        android:id="@+id/edtPrecoConsumo"
+        android:id="@+id/edtConsumoPorLitro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Insira o consumo por litro"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloConsumoLitro" />
 
     <Button
-        android:id="@+id/btnPrecoConsumoProximo"
+        android:id="@+id/btnConsumoLitroProximo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -29,6 +30,18 @@
         android:layout_marginBottom="16dp"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtPrecoConsumo"
-        app:layout_constraintStart_toStartOf="@+id/edtPrecoConsumo" />
+        app:layout_constraintEnd_toEndOf="@+id/edtConsumoPorLitro"
+        app:layout_constraintStart_toStartOf="@+id/edtConsumoPorLitro" />
+
+    <TextView
+        android:id="@+id/tvTituloConsumoLitro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Consumo por litro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

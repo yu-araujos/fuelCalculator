@@ -25,8 +25,8 @@ class PrecoCombustivelActivity : AppCompatActivity() {
 
         btnPrecoCombustivelProximo.setOnClickListener {
             val edtPrecoCombustivelValor = edtPrecoCombustivel.text.toString().toDouble()
-            val intent = Intent(this, PrecoConsumoActivity::class.java)
-            intent.putExtra("CHAVE", edtPrecoCombustivelValor)
+            val intent = Intent(this, ConsumoPorLitroActivity::class.java)
+            intent.putExtra("PRECO_COMBUSTIVEL", edtPrecoCombustivelValor)
             startActivity(intent)
         }
     }

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnCalcular = findViewById<Button>(R.id.btnCalcular)
+        val btnCalcular = findViewById<Button>(R.id.btnMainProximo)
 
         btnCalcular.setOnClickListener {
             val intent = Intent(this, PrecoCombustivelActivity::class.java)
