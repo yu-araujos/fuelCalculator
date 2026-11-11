@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".PrecoCombustivelActivity">
 
     <EditText
@@ -12,14 +13,29 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Preço Combustivel"
+        android:hint="Insira o preço do combustivel"
         android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloPrecoCombustivel" />
+
+    <TextView
+        android:id="@+id/tvTituloPrecoCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="304dp"
+        android:text="Preço Combustivel"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPrecoCombustivel"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnPrecoCombustivelProximo"
@@ -29,19 +45,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:hint="Preço Combustivel"
-        android:text="Proximo"
+        android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tvTituloPrecoCombustivel"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Preço Combustivel"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/edtPrecoCombustivel"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
